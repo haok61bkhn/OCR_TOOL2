@@ -63,7 +63,7 @@ class MainWindow(QtWidgets.QMainWindow):
         
     def event_ok(self):
         if(self.check):
-            lb=self.label.toPlainText()
+            lb=self.id_2.toPlainText()+"\n"+self.name_2.toPlainText()+"\n"+self.date_2.toPlainText()+"\n"+self.ad1_2.toPlainText()+"\n"+self.ad2_2.toPlainText()
             path=self.list_img[self.id]
             label = open(path.split(".")[0]+".txt","w+")
             label.write(lb)
